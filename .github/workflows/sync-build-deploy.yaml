@@ -33,7 +33,7 @@ jobs:
       - name: Check out main branch of Docs Prod repo
         uses: actions/checkout@v3
         with:
-         ref: main
+         ref: master
          
       - name: Merge dev -> master
         uses: devmasx/merge-branch@master
