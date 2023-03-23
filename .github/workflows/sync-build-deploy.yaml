@@ -1,5 +1,10 @@
 name: Merge Dev->Main, Deploy GH-Pages
 
+env:
+  GIT_COMMITTER_NAME: ci-bot 
+  GIT_COMMITTER_EMAIL: ci-bot@quix.io
+
+
 on:
   # Runs on pushes targeting the default branch
   push:
