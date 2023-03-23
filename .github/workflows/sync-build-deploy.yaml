@@ -177,6 +177,8 @@ jobs:
           user.name: build-bot
           GIT_COMMITTER_NAME: ci-bot
           GIT_COMMITTER_EMAIL: ci-bot@example.com
+          AccessToken: ${{ secrets.QUIX_STREAMS_ACCESS_TOKEN }}
+
 
 
   #     - name: Build MkDocs Site
