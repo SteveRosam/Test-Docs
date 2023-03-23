@@ -183,9 +183,9 @@ extra:
       link: 'https://twitter.com/quix_io'
     - icon: 'fontawesome/brands/youtube'
       link: 'https://www.youtube.com/channel/UCrijXvbQg67m9-le28c7rPA'
-  # analytics:
-  #   provider: google-tag-manager
-  #   property: GTM-55L66N3 #UA-173360929-3 ignored, using GTM instead of universal analytics
+  analytics:
+    provider: google-tag-manager
+    property: GTM-blahblah
   hotjar:
     id: 2437577
   version:
@@ -198,10 +198,10 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
-    # cookies:
-    #   analytics:
-    #     name: Google Analytics
-    #     checked: true
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
   
   #alternate:
 markdown_extensions:
