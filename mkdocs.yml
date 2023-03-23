@@ -1,0 +1,224 @@
+site_name: ''
+site_description: 'Test Docs'
+site_author: 'SteveRosam'
+site_url: ''
+
+copyright: >
+  Copyright &copy; 2020 - 2022 Quix Analytics, Ltd. –
+  <a href="#__consent">Change cookie settings</a>
+
+docs_dir: docs/
+repo_name: steverosam/test-docs
+repo_url: https://github.com/SteveRosam/Test-Docs
+edit_uri: tree/dev/docs/
+nav:
+  - Intro: 'index.md'
+  - 'Quickstart': 'platform/tutorials/quick-start/quick-start.md'
+  - Platform:
+    - 'What is Quix?': 'platform/intro.md'
+    - 'Definitions': 'platform/definitions.md'
+    - 'How To':
+      - 'Get Workspace ID': 'platform/how-to/get-workspace-id.md'
+      - 'Use SDK token': 'platform/how-to/use-sdk-token.md'
+      - 'Use Jupyter notebooks': 'platform/how-to/jupyter-nb.md'
+      - 'Develop web applications with Quix': 'platform/how-to/webapps.md'
+      - 'Write to Quix with NodeJs': 'platform/how-to/webapps/write.md'
+      - 'Read from Quix with NodeJs': 'platform/how-to/webapps/read.md'
+      - 'Create a Dead Letter Queue': 'platform/how-to/create-dlq.md'
+      - 'Deploy public services': 'platform/how-to/deploy-public-page.md'
+    - 'Tutorials':
+      - 'Event detection':
+        - 'platform/tutorials/eventDetection/index.md'
+        - '1. Data acquisition': 'platform/tutorials/eventDetection/data-acquisition.md'
+        - '2. Event detection': 'platform/tutorials/eventDetection/crash-detection.md'
+        - '3. Demo UI': 'platform/tutorials/eventDetection/crash-detection-ui.md'
+        - '4. Conclusion': 'platform/tutorials/eventDetection/conclusion.md'
+      - 'Real-time image processing': 
+        - platform/tutorials/image-processing/index.md
+        - '1. Connect webcam video': platform/tutorials/image-processing/connect-video-webcam.md
+        - '2. Decode images': platform/tutorials/image-processing/decode.md
+        - '3. Object detection': platform/tutorials/image-processing/object-detection.md
+        - '4. Connect TfL video': platform/tutorials/image-processing/connect-video-tfl.md
+        - '5. Frame grabber': platform/tutorials/image-processing/tfl-frame-grabber.md
+        - '6. Deploy the UI': platform/tutorials/image-processing/web-ui.md
+        - '7. Summary': platform/tutorials/image-processing/summary.md        
+      - 'Sentiment analysis': 
+        - platform/tutorials/sentiment-analysis/index.md
+        - '1. Sentiment Demo UI': 'platform/tutorials/sentiment-analysis/sentiment-demo-ui.md'
+        - '2. Analyzing sentiment': 'platform/tutorials/sentiment-analysis/analyze.md'
+        - '3. Twitter data': 'platform/tutorials/sentiment-analysis/twitter-data.md'
+        - '4. Conclusion': 'platform/tutorials/sentiment-analysis/conclusion.md'
+        - 'Sentiment analysis microservice': 'platform/tutorials/sentiment-analysis/code-and-deploy-sentiment-service.md'
+        - 'Customize the UI': 'platform/tutorials/sentiment-analysis/customize-the-ui.md'
+      - 'No code sentiment analysis': 'platform/tutorials/nocode-sentiment/nocode-sentiment-analysis.md'
+      - 'RSS Processing': 'platform/tutorials/rss-tutorial/rss-processing-pipeline.md'
+      - 'Currency Alerting': 'platform/tutorials/currency-alerting/currency-alerting.md'
+      - 'Telemetry data': 'platform/tutorials/telemetry-data/telemetry-data.md'
+      - 'Train and deploy an ML model':
+        - 'How to train an ML model': 'platform/tutorials/train-and-deploy-ml/train-ml-model.md'
+        - 'Run ML model in realtime environment': 'platform/tutorials/train-and-deploy-ml/deploy-ml.md'
+      - 'Data Science': 'platform/tutorials/data-science/data-science.md'
+      - 'Data Stream Processing': 'platform/tutorials/data-stream-processing/data-stream-processing.md'
+      - 'Slack Alerting': 'platform/tutorials/slack-alerting/slack-alerting.md'
+    - 'Code Samples': 'platform/samples/samples.md'
+    - 'Connectors':
+      - platform/connectors/index.md
+#ConnectorsGetInsertedHere
+    - 'Troubleshooting': 'platform/troubleshooting/troubleshooting.md'
+    - 'Security': 'platform/security/security.md'
+  - 'Client Library': '!import https://github.com/quixio/quix-streams?branch=main'
+  - API:
+    - 'Index': 'apis/index.md'
+    - 'Data Catalogue API':
+      - 'Introduction': 'apis/data-catalogue-api/intro.md'
+      - 'Authenticate': 'apis/data-catalogue-api/authenticate.md'
+      - 'Getting Swagger URL': 'apis/data-catalogue-api/get-swagger.md'
+      - 'Forming a request': 'apis/data-catalogue-api/request.md'
+      - 'Paged streams': 'apis/data-catalogue-api/streams-paged.md'
+      - 'Filtered streams': 'apis/data-catalogue-api/streams-filtered.md'
+      - 'Streams with models': 'apis/data-catalogue-api/streams-models.md'
+      - 'Raw data': 'apis/data-catalogue-api/raw-data.md'
+      - 'Aggregate data by time': 'apis/data-catalogue-api/aggregate-time.md'
+      - 'Aggregate data by tags': 'apis/data-catalogue-api/aggregate-tags.md'
+      - 'Tag filtering': 'apis/data-catalogue-api/filter-tags.md'
+    - 'Streaming Writer API':
+      - 'Introduction': 'apis/streaming-writer-api/intro.md'
+      - 'Authenticate': 'apis/streaming-writer-api/authenticate.md'
+      - 'Getting Swagger URL': 'apis/streaming-writer-api/get-swagger.md'
+      - 'Forming a request': 'apis/streaming-writer-api/request.md'
+      - 'Set up SignalR': 'apis/streaming-writer-api/signalr.md'
+      - 'Create a new Stream': 'apis/streaming-writer-api/create-stream.md'
+      - 'Add Stream metadata': 'apis/streaming-writer-api/stream-metadata.md'
+      - 'Send Parameter data': 'apis/streaming-writer-api/send-data.md'
+      - 'Send an Event': 'apis/streaming-writer-api/send-event.md'
+    - 'Streaming Reader API':
+      - 'Introduction': 'apis/streaming-reader-api/intro.md'
+      - 'Authenticate': 'apis/streaming-reader-api/authenticate.md'
+      - 'Set up SignalR': 'apis/streaming-reader-api/signalr.md'
+      - 'Reading data': 'apis/streaming-reader-api/reading-data.md'
+      - 'Subscription & Event reference': 'apis/streaming-reader-api/subscriptions.md'
+    - 'Portal API': 'apis/portal-api.md'
+
+plugins:
+  - search:
+      separator: '[\s\-\.]' 
+  - glightbox
+  - multirepo
+  - redirects:
+      redirect_maps:
+        'sdk-intro.md': 'client-library-intro.md'
+        'sdk/quickstart.md': 'client-library/quickstart.md'
+        'sdk/kafka.md': 'client-library/kafka.md'
+        'sdk/features/streaming-context.md': 'client-library/features/streaming-context.md'
+        'sdk/features/builtin-buffers.md': 'client-library/features/builtin-buffers.md'
+        'sdk/features/data-frames.md': 'client-library/features/data-frames.md'
+        'sdk/features/message-splitting.md': 'client-library/features/message-splitting.md'
+        'sdk/features/data-serialization.md': 'client-library/features/data-serialization.md'
+        'sdk/features/multiple-data-types.md': 'client-library/features/multiple-data-types.md'
+        'sdk/features/checkpointing.md': 'client-library/features/checkpointing.md'
+        'sdk/features/horizontal-scaling.md': 'client-library/features/horizontal-scaling.md'
+        'sdk/connect.md': 'client-library/connect.md'
+        'sdk/app-management.md': 'client-library/app-management.md'
+        'sdk/publish.md': 'client-library/publish.md'
+        'sdk/subscribe.md': 'client-library/subscribe.md'
+        'sdk/process.md': 'client-library/process.md'
+        'sdk/state-management.md': 'client-library/state-management.md'
+        'sdk/versionmigration.md': 'client-library/versionmigration.md'
+        'sdk/using.md': 'client-library/using.md'
+        'platform/tutorials/imageProcessing/imageProcessing.md': 'platform/tutorials/image-processing/index.md'
+
+theme:
+  name: 'material'
+  custom_dir: overrides
+  # TODO
+  logo: assets/Quix-docs-logo-header03.svg
+  #custom_dir: 'theme'
+  favicon: 'assets/favicon.ico'
+  
+  palette: 
+  # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  
+  features:
+  - navigation.instant     # Instant loading pages.
+  - navigation.sections    # Render top sections as groups.
+  - navigation.top         # Adds a "Back to top" that is shown when scrolling up.
+  - navigation.tracking    # Updates the url with highlighted section anchor.
+  - navigation.indexes     # Documents can be directly attached to sections
+  - search.highlight       # Search will highlight the searched word(s) on the page.*
+  - search.share           # Adds an option to share a search query link.*
+  - search.suggest         # Search will suggest the likeliest completion for a word.*
+  - content.tabs.link
+  - content.code.annotate  # code annotations
+  
+  icon:
+    logo: 'material/library'
+    repo: 'material/library'
+  
+
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/quixio/quix-docs'
+    - icon: 'fontawesome/brands/slack'
+      link: 'https://quix.io/community'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/quix_io'
+    - icon: 'fontawesome/brands/youtube'
+      link: 'https://www.youtube.com/channel/UCrijXvbQg67m9-le28c7rPA'
+  analytics:
+    provider: google-tag-manager
+    property: GTM-55L66N3 #UA-173360929-3 ignored, using GTM instead of universal analytics
+  hotjar:
+    id: 2437577
+  version:
+    provider: mike
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
+  
+  #alternate:
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details:
+  - pymdownx.highlight:
+      anchor_linenums: true
