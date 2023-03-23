@@ -1,6 +1,6 @@
 # Quix Documentation
   
-Welcome to the Quix documentation! v2.0
+Welcome to the Quix documentation! v2.5
 
 ## Get started
 
