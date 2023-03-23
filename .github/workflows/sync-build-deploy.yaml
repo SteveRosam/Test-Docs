@@ -172,7 +172,7 @@ jobs:
       ####################################################
 
       - name: Deply docs
-        run: mike deploy 2.5 --push
+        run: mike deploy 2.5
         env:
           user.name: build-bot
           GIT_COMMITTER_NAME: ci-bot
