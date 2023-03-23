@@ -5,7 +5,7 @@ on:
   push:
   #  branches: [$default-branch]
     tags:
-      - test-deploy-*
+      - deploy-*
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -35,13 +35,13 @@ jobs:
         with:
          ref: master
          
-      - name: Merge dev -> master
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          from_branch: dev
-          target_branch: master
-          github_token: ${{ github.token }}
+      # - name: Merge dev -> master
+      #   uses: devmasx/merge-branch@master
+      #   with:
+      #     type: now
+      #     from_branch: dev
+      #     target_branch: master
+      #     github_token: ${{ github.token }}
          
       - name: Set up Python
         uses: actions/setup-python@v2
