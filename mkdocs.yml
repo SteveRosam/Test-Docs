@@ -102,8 +102,9 @@ nav:
 plugins:
   - search:
       separator: '[\s\-\.]' 
+  - mike:
   - glightbox
-  - multirepo
+  - multirepo:
   - redirects:
       redirect_maps:
         'sdk-intro.md': 'client-library-intro.md'
